@@ -1,4 +1,8 @@
-/* App css */
+/* APP CSS */
+
+.AppSection {
+  background-color: rgb(40, 38, 38);
+}
 
 .App {
   text-align: center;
@@ -39,7 +43,7 @@
   }
 }
 
-/* Index css */
+/* INDEX CSS */
 
 body {
   margin: 0;
@@ -55,10 +59,29 @@ code {
     monospace;
 }
 
-/* Global css*/
+/* NAVBAR CSS */
+
+.Navbar {
+  margin-top: 0;
+  padding: 5px;
+  background-color: black;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-evenly;
+  font-size: 20px;
+  text-decoration: underline;
+  text-decoration: bold;
+}
+
+.Navbar:hover {
+  color: brown;
+  cursor: pointer;
+}
+
+/* GLOBAL CSS */
 
 * {
-  background-color: black;
+  background-color: rgb(40, 38, 38);
   color: aqua;
   text-align: center;
 }
