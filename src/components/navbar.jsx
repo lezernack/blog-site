@@ -4,9 +4,9 @@ import "../global.css";
 const navbar = () => {
   return (
     <ul className="Navbar">
-      <li className="Navbar">Blog</li>
-      <li className="Navbar">About</li>
-      <li className="Navbar">Others</li>
+      <li className="Navbar-li">Blog</li>
+      <li className="Navbar-li">About</li>
+      <li className="Navbar-li">Others</li>
     </ul>
   );
 };

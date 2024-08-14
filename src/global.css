@@ -61,10 +61,12 @@ code {
 
 /* NAVBAR CSS */
 
-.Navbar {
+.Navbar,
+.Navbar-li {
   margin-top: 0;
   padding: 5px;
-  background-color: black;
+  background-color: gold;
+  color: black;
   display: flex;
   flex-wrap: nowrap;
   justify-content: space-evenly;
@@ -73,15 +75,28 @@ code {
   text-decoration: bold;
 }
 
-.Navbar:hover {
-  color: brown;
+.Navbar-li:hover {
+  color: white;
   cursor: pointer;
+}
+
+/* BLOGSECTION CSS */
+
+.BlogSection {
+  display: flex;
+  justify-content: center;
+  column-gap: 20%;
+}
+
+.Blog1,
+.Blog2 {
+  border: 10px solid gold;
 }
 
 /* GLOBAL CSS */
 
 * {
   background-color: rgb(40, 38, 38);
-  color: aqua;
+  color: goldenrod;
   text-align: center;
 }
