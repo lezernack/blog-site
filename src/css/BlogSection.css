@@ -1,0 +1,22 @@
+.section1,
+.section2 {
+  font-size: 2rem;
+  border: 4px inset goldenrod;
+  text-align: center;
+}
+
+.section1 {
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.about {
+  font-style: italic;
+  font-size: 1.5rem;
+  text-align: center;
+  color: silver;
+}
+
+ul {
+  display: inline-block;
+}

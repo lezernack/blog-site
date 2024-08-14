@@ -1,0 +1,19 @@
+.Navbar,
+.Navbar-li {
+  margin-top: 0;
+  margin-bottom: 2px;
+  padding: 5px;
+  background-color: gold;
+  color: black;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-evenly;
+  font-size: 20px;
+  text-decoration: underline;
+  text-decoration: bold;
+}
+
+.Navbar-li:hover {
+  color: silver;
+  cursor: pointer;
+}
