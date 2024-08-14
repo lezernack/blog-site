@@ -1,5 +1,6 @@
 .Navbar,
-.Navbar-li {
+.Navbar-li,
+.bars {
   margin-top: 0;
   margin-bottom: 2px;
   padding: 5px;
