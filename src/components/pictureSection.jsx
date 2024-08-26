@@ -8,14 +8,14 @@ const pictureSection = () => {
   return (
     <div id="pictures">
       <section className="book">
-        <img src={book} alt="book" height="300" width="300" />
+        <img src={book} alt="book" height="400" width="400" />
       </section>
       <section className="controller">
         <img
           src={controller}
           alt="videoGame controller"
-          height="300"
-          width="300"
+          height="400"
+          width="400"
         />
       </section>
     </div>

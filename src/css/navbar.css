@@ -13,7 +13,15 @@
   text-decoration: bold;
 }
 
+.Navbar-li {
+  border: 4px inset black;
+  border-radius: 40px;
+}
+
 .Navbar-li:hover {
-  color: silver;
+  color: gold;
   cursor: pointer;
+  background-color: rgb(40, 38, 38);
+  border: 4px inset goldenrod;
+  text-decoration: none;
 }

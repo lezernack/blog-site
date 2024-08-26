@@ -1,7 +1,8 @@
 #pictures {
   display: flex;
+  margin-top: -1rem;
   justify-content: center;
-  gap: 1rem;
+  gap: 7rem;
 }
 .book,
 .controller {

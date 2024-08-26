@@ -1,19 +1,18 @@
-.section1 {
-  margin-top: -3rem;
+.Welcome {
+  margin-top: -2rem;
   text-align: center;
   font-size: 2rem;
 }
 
-.section2 {
-  display: flex;
-  justify-content: center;
-  gap: 37%;
-}
-
 .About {
-  margin-top: 0rem;
+  margin-top: -2rem;
+  margin-left: 3%;
+  margin-right: 3%;
+  padding-top: 2rem;
+  padding-bottom: 3rem;
   font-size: 1.5rem;
   border: 4px inset goldenrod;
+  border-radius: 50px;
   text-align: center;
 }
 
@@ -22,10 +21,16 @@
   font-size: 1.2rem;
   text-align: center;
   color: silver;
+  border-radius: 50px;
 }
 
 .list {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+  margin-right: 6%;
+  margin-left: 6%;
   border: 4px inset goldenrod;
+  border-radius: 50px;
   font-size: 1.5rem;
-  padding: 10%;
 }
