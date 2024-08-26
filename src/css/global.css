@@ -2,3 +2,7 @@
   background-color: rgb(40, 38, 38);
   color: goldenrod;
 }
+
+.AbtPic {
+  display: flex;
+}
