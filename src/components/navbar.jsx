@@ -8,14 +8,14 @@ const Navbar = () => {
 
   return (
     <nav>
-      <div className="bars">
+      <div className="mobile-menu block md:hidden">
         {!navbarOpen ? (
           <button onClick={() => setNavbarOpen(true)}>
-            <Bars3Icon className="h-10 w-10" />
+            <Bars3Icon className="flex items-center px-3 py-2 border rounded border-slate-200 text-slate-200 hover:text-white hover:border-white" />
           </button>
         ) : (
           <button onClick={() => setNavbarOpen(false)}>
-            <XMarkIcon className="h-5 w-5" />
+            <XMarkIcon className="flex items-center px-3 py-2 border rounded border-slate-200 text-slate-200 hover:text-white hover:border-white" />
           </button>
         )}
       </div>
