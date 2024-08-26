@@ -1,4 +1,18 @@
 #pictures {
   display: flex;
-  flex-wrap: nowrap;
+  justify-content: center;
+  gap: 1rem;
+}
+.book,
+.controller {
+  padding: 0rem;
+  border: 4px inset goldenrod;
+}
+
+.book {
+  margin-bottom: 4rem;
+}
+
+.controller {
+  margin-bottom: 4rem;
 }

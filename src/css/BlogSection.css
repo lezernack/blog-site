@@ -5,6 +5,12 @@
 }
 
 .section2 {
+  display: flex;
+  justify-content: center;
+  gap: 37%;
+}
+
+.About {
   margin-top: 0rem;
   font-size: 1.5rem;
   border: 4px inset goldenrod;
@@ -18,6 +24,8 @@
   color: silver;
 }
 
-ul {
-  display: inline-block;
+.list {
+  border: 4px inset goldenrod;
+  font-size: 1.5rem;
+  padding: 10%;
 }
