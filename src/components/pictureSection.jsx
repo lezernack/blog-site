@@ -1,21 +1,22 @@
 import React from "react";
 import "../css/global.css";
+import "../css/pictureSection.css";
 import book from "../images/book.png";
 import controller from "../images/controller.png";
 
 const pictureSection = () => {
   return (
-    <div>
+    <div id="pictures">
       <ul>
         <li>
-          <img src={book} alt="book" height="500" width="500" />
+          <img src={book} alt="book" height="300" width="300" />
         </li>
         <li>
           <img
             src={controller}
             alt="videoGame controller"
-            height="500"
-            width="500"
+            height="300"
+            width="300"
           />
         </li>
       </ul>

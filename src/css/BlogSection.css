@@ -1,12 +1,12 @@
-.section1,
+.section1 {
+  margin-bottom: 2rem;
+  text-align: center;
+  font-size: 2rem;
+}
+
 .section2 {
   font-size: 2rem;
   border: 4px inset goldenrod;
-  text-align: center;
-}
-
-.section1 {
-  margin-bottom: 2rem;
   text-align: center;
 }
 

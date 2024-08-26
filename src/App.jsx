@@ -9,8 +9,10 @@ function App() {
   return (
     <div>
       <Navbar />
-      <BlogSection />
-      <PictureSection />
+      <div className="AbtPic">
+        <BlogSection />
+        <PictureSection />
+      </div>
     </div>
   );
 }
