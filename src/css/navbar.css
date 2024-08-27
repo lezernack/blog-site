@@ -13,6 +13,12 @@
   text-decoration: bold;
 }
 
+.Navbar {
+  position: fixed;
+  width: 100%;
+  margin-top: -2.7rem;
+}
+
 .Navbar-li {
   border: 4px inset black;
   border-radius: 40px;
