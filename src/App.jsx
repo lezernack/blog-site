@@ -5,6 +5,7 @@ import Navbar from "./components/Navbar";
 import HomeSection from "./components/HomeSection";
 import PictureSection from "./components/PictureSection";
 import VideoGameSection from "./components/VideoGameSection";
+import BookSection from "./components/BookSection";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <PictureSection />
       <div>
         <VideoGameSection />
+        <BookSection />
       </div>
     </div>
   );

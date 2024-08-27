@@ -1,12 +1,12 @@
 import React from "react";
 import "../css/global.css";
-import "../css/videoGameSection.css";
+import "../css/bookSection.css";
 
-const VideoGameSection = () => {
+const BookSection = () => {
   return (
     <div>
       <div className="header">
-        <h1>VideoGames</h1>
+        <h1>Books</h1>
       </div>
       <div className="section">
         <div className="list">
@@ -27,4 +27,4 @@ const VideoGameSection = () => {
   );
 };
 
-export default VideoGameSection;
+export default BookSection;
