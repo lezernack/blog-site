@@ -2,13 +2,15 @@ import React from "react";
 import "./css/global.css";
 import "./css/App.css";
 import Navbar from "./components/navbar";
-import BlogSection from "./components/BlogSection";
+import HomeSection from "./components/HomeSection";
+import PictureSection from "./components/PictureSection";
 
 function App() {
   return (
     <div>
       <Navbar />
-      <BlogSection />
+      <HomeSection />
+      <PictureSection />
     </div>
   );
 }

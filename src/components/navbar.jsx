@@ -8,9 +8,9 @@ const Navbar = () => {
   return (
     <nav>
       <ul className="Navbar">
-        <li className="Navbar-li">Blog</li>
-        <li className="Navbar-li">About</li>
-        <li className="Navbar-li">Others</li>
+        <li className="Navbar-li">VideoGames</li>
+        <li className="Navbar-li">Home</li>
+        <li className="Navbar-li">Books</li>
       </ul>
     </nav>
   );

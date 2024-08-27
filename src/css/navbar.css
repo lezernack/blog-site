@@ -25,3 +25,9 @@
   border: 4px inset goldenrod;
   text-decoration: none;
 }
+
+.Navbar-li:active {
+  color: ivory;
+  background-color: gold;
+  text-decoration: none;
+}
