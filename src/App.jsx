@@ -3,19 +3,17 @@ import "./css/global.css";
 import "./css/App.css";
 import Navbar from "./components/Navbar";
 import HomeSection from "./components/HomeSection";
-import PictureSection from "./components/PictureSection";
-import VideoGameSection from "./components/VideoGameSection";
-import BookSection from "./components/BookSection";
+import Section1 from "./components/Section1";
+import Section2 from "./components/Section2";
 
 function App() {
   return (
     <div>
       <Navbar />
       <HomeSection />
-      <PictureSection />
       <div>
-        <VideoGameSection />
-        <BookSection />
+        <Section1 />
+        <Section2 />
       </div>
     </div>
   );

@@ -1,18 +1,18 @@
-import React, { useState } from "react";
+import React from "react";
 import "../css/global.css";
 import "../css/navbar.css";
 
 const Navbar = () => {
-  const [setNavbarOpen, navbarOpen] = useState(false);
-
   return (
-    <nav>
-      <ul className="Navbar">
-        <li className="Navbar-li">VideoGames</li>
-        <li className="Navbar-li">Home</li>
-        <li className="Navbar-li">Books</li>
-      </ul>
-    </nav>
+    <div>
+      <nav>
+        <ul className="Navbar">
+          <li className="Navbar-li">Section1</li>
+          <li className="Navbar-li">Home</li>
+          <li className="Navbar-li">Section2</li>
+        </ul>
+      </nav>
+    </div>
   );
 };
 
