@@ -1,6 +1,6 @@
 import React from "react";
 import "../css/global.css";
-import "../css/videoGameSection.css";
+import "../css/gameBookSection.css";
 
 const VideoGameSection = () => {
   return (
@@ -10,17 +10,24 @@ const VideoGameSection = () => {
       </div>
       <div className="section">
         <div className="list">
-          <ol>
-            <li>left</li>
+          <ul>
+            <li>Ghost of Tsushima</li>
             <br />
-            <li>right</li>
-            <br />
-            <li>left</li>
-            <br />
-          </ol>
+            <li>Red Dead Redemption 2</li>
+          </ul>
         </div>
-        <div className="description">
-          <h2>Words</h2>
+        <div className="dscrptDiv">
+          <h2 className="dscrpt">
+            Ghost Of Tsushima is about a samurai fighting against a mongol
+            invansion of his homeland. The story has a lot of elements that
+            blend together to create something greater than it's parts. Gameplay
+            wise, stealth is simple but works well, however the combat is really
+            where it shines; it's addicting and makes you feel cool.
+          </h2>
+          <h2 className="dscrpt">
+            The story in Red Redemption 2 is amazing. The gameplay really makes
+            you feel like a cowboy.
+          </h2>
         </div>
       </div>
     </div>

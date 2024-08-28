@@ -6,13 +6,22 @@
 
 .section {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
+  gap: 3rem;
 }
 
-.list,
-.description {
+.list {
   padding: 5%;
+  margin-bottom: 15%;
   border: 4px inset goldenrod;
   border-radius: 50px;
   font-size: 1.5rem;
+}
+
+.dscrpt {
+  padding: 5%;
+  margin-right: 5%;
+  border: 4px inset goldenrod;
+  border-radius: 50px;
+  font-size: 1rem;
 }

@@ -17,11 +17,13 @@
   position: fixed;
   width: 100%;
   margin-top: -2.7rem;
+  opacity: 40%;
 }
 
 .Navbar-li {
   border: 4px inset black;
   border-radius: 40px;
+  opacity: 100%;
 }
 
 .Navbar-li:hover {
