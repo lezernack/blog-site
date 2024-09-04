@@ -2,3 +2,93 @@
   background-color: rgb(40, 38, 38);
   color: goldenrod;
 }
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: gold;
+}
+
+::-webkit-scrollbar-track {
+  background: rgb(40, 38, 38);
+}
+
+@media screen and (max-width: 350px) {
+  div.Welcome {
+    font-size: 1.25rem;
+    text-align: center;
+    margin-left: 40%;
+  }
+
+  div.About {
+    font-size: 1.5rem;
+    text-align: center;
+    margin-left: 32%;
+    margin-right: -32%;
+  }
+
+  div.pictures {
+    display: inline-block;
+    margin-left: 40%;
+  }
+
+  img {
+    height: 250px;
+    width: 250px;
+  }
+
+  div.section {
+    display: inline-block;
+  }
+
+  input.dscrpt {
+    margin-left: 10%;
+  }
+
+  div.header,
+  input.title {
+    font-size: 1.5rem;
+    margin-left: 10%;
+  }
+}
+
+@media screen and (min-width: 351px) and (max-width: 400px) {
+  div.Welcome {
+    font-size: 1.75rem;
+    text-align: center;
+    margin-left: 15%;
+  }
+
+  div.About {
+    font-size: 1.5rem;
+    text-align: center;
+    margin-left: 5%;
+    margin-right: -5%;
+  }
+
+  div.pictures {
+    display: inline-block;
+    margin-left: 20%;
+  }
+
+  img {
+    height: 250px;
+    width: 250px;
+  }
+
+  div.section {
+    display: inline-block;
+  }
+
+  input.dscrpt {
+    margin-left: 10%;
+  }
+
+  div.header,
+  input.title {
+    font-size: 1.5rem;
+    margin-left: 10%;
+  }
+}

@@ -7,12 +7,7 @@ const Section1 = () => {
   return (
     <div>
       <div className="header">
-        <input
-          className="header"
-          type="text"
-          placeholder="Section1"
-          id="title"
-        />
+        <input className="title" type="text" placeholder="Section1" />
       </div>
       <div className="section">
         <ul>
