@@ -6,7 +6,7 @@ import controller from "../images/controller.png";
 
 const pictureSection = () => {
   return (
-    <div id="pictures">
+    <div className="pictures">
       <section className="book">
         <img src={book} alt="book" height="400" width="400" />
       </section>

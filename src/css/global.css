@@ -2,3 +2,18 @@
   background-color: rgb(40, 38, 38);
   color: goldenrod;
 }
+
+@media only screen and (max-width: 600px) {
+  div.Welcome {
+    font-size: 1.2rem;
+    text-align: center;
+  }
+
+  div.About {
+    font-size: 1.2rem;
+  }
+
+  div.pictures {
+    display: flex;
+  }
+}

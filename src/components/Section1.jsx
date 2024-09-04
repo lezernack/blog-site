@@ -6,21 +6,27 @@ import Navbar from "./Navbar";
 const Section1 = () => {
   return (
     <div>
-      <Navbar />
       <div className="header">
-        <h1>Section1</h1>
+        <input
+          className="header"
+          type="text"
+          placeholder="Section1"
+          id="title"
+        />
       </div>
       <div className="section">
-        <div className="list">
-          <ul>
-            <li>h</li>
-            <br />
-            <li>h</li>
-          </ul>
-        </div>
+        <ul>
+          <li>
+            <input
+              className="list"
+              name="section1"
+              type="text"
+              placeholder="Placeholder"
+            />
+          </li>
+        </ul>
         <div className="dscrptDiv">
-          <h2 className="dscrpt">words</h2>
-          <h2 className="dscrpt">words</h2>
+          <input className="dscrpt" type="text" placeholder="Description" />
         </div>
       </div>
     </div>

@@ -6,25 +6,30 @@ import Navbar from "./Navbar";
 const Section2 = () => {
   return (
     <div>
-      <Navbar />
       <div className="header">
-        <h1>Section2</h1>
+        <input
+          className="header"
+          name="title"
+          type="text"
+          placeholder="Section2"
+          id="title"
+        />
       </div>
       <div className="section">
-        <div className="list">
+        <div>
           <ul>
-            <li>h</li>
-            <br />
-            <li>h</li>
-            <br />
-            <li>h</li>
-            <br />
+            <li>
+              <input
+                className="list"
+                name="section2"
+                type="text"
+                placeholder="Placeholder"
+              />
+            </li>
           </ul>
         </div>
         <div className="dscrptDiv">
-          <h2 className="dscrpt">words</h2>
-          <h2 className="dscrpt">wprds</h2>
-          <h2 className="dscrpt">words</h2>
+          <input className="dscrpt" type="text" placeholder="Description" />
         </div>
       </div>
     </div>

@@ -1,9 +1,10 @@
-#pictures {
+.pictures {
   display: flex;
   margin-top: 2rem;
   justify-content: center;
   gap: 7rem;
 }
+
 .book,
 .controller {
   padding: 0rem;
