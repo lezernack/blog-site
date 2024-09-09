@@ -10,16 +10,14 @@ const Section1 = () => {
         <input className="title" type="text" placeholder="Section1" />
       </div>
       <div className="section">
-        <ul>
-          <li>
-            <input
-              className="list"
-              name="section1"
-              type="text"
-              placeholder="Placeholder"
-            />
-          </li>
-        </ul>
+        <div>
+          <input
+            className="list"
+            name="section1"
+            type="text"
+            placeholder="Placeholder"
+          />
+        </div>
         <div className="dscrptDiv">
           <input className="dscrpt" type="text" placeholder="Description" />
         </div>

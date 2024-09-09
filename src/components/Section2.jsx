@@ -11,16 +11,12 @@ const Section2 = () => {
       </div>
       <div className="section">
         <div>
-          <ul>
-            <li>
-              <input
-                className="list"
-                name="section2"
-                type="text"
-                placeholder="Placeholder"
-              />
-            </li>
-          </ul>
+          <input
+            className="list"
+            name="section2"
+            type="text"
+            placeholder="Placeholder"
+          />
         </div>
         <div className="dscrptDiv">
           <input className="dscrpt" type="text" placeholder="Description" />
