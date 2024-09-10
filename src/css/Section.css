@@ -31,6 +31,20 @@
   margin-top: 1%;
 }
 
+.btns {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.Cbtn,
+.Ebtn,
+.Dbtn {
+  background-color: gold;
+  color: black;
+  font-size: 25px;
+  font-weight: bold;
+}
+
 ::placeholder {
   color: goldenrod;
   opacity: 1;

@@ -6,29 +6,34 @@ import Navbar from "./Navbar";
 const Section1 = () => {
   return (
     <div>
-      <div className="header">
-        <input
-          className="header"
-          type="text"
-          placeholder="Section1"
-          id="title"
-        />
-      </div>
-      <div className="section">
-        <ul>
-          <li>
+      <form>
+        <div className="header">
+          <input
+            className="header"
+            type="text"
+            placeholder="Section1"
+            id="title"
+          />
+        </div>
+        <div className="section">
+          <form>
             <input
               className="list"
               name="section1"
               type="text"
               placeholder="Placeholder"
             />
-          </li>
-        </ul>
-        <div className="dscrptDiv">
-          <input className="dscrpt" type="text" placeholder="Description" />
+          </form>
+          <div className="dscrptDiv">
+            <input className="dscrpt" type="text" placeholder="Description" />
+          </div>
         </div>
-      </div>
+        <div className="btns">
+          <button className="Cbtn">Create</button>
+          <button className="Ebtn">Edit</button>
+          <button className="Dbtn">Delete</button>
+        </div>
+      </form>
     </div>
   );
 };
