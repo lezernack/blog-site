@@ -1,10 +1,48 @@
-.comment-container {
-  display: inline;
-  text-align: center;
-  background-color: blue;
+.cmnt-cntnr {
+  display: flex;
+  justify-content: center;
 }
 
-.comments {
+.cmnt-sctn {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 3rem;
+}
+
+.cmnts {
   font-size: 30px;
-  margin-top: 0;
+  margin-top: 1rem;
+  padding: 3%;
+  border-radius: 20px;
+  border: 3px inset goldenrod;
+}
+
+.btn {
+  background-color: black;
+  color: gold;
+  border-color: goldenrod;
+  border-radius: 20px;
+}
+
+.cntnr {
+  text-align: center;
+  background-color: goldenrod;
+  font-size: 20px;
+}
+
+.table {
+  display: inline;
+  text-align: center;
+  font-size: 20px;
+}
+
+tr {
+  display: flex;
+  justify-content: space-evenly;
+  background-color: goldenrod;
+}
+
+th {
+  background-color: goldenrod;
+  color: black;
 }

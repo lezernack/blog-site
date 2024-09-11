@@ -6,6 +6,11 @@
   padding-top: 20px;
 }
 
+.title {
+  border-radius: 20px;
+  border: 3px inset goldenrod;
+}
+
 .section {
   display: flex;
   justify-content: space-evenly;

@@ -7,14 +7,19 @@
 
 .book,
 .controller {
-  padding: 0rem;
   border: 4px inset goldenrod;
+  border-radius: 20px;
 }
 
 .book {
   margin-bottom: 4rem;
+  padding: 8.7rem;
+  background-image: url("../images/book.png");
 }
 
 .controller {
   margin-bottom: 4rem;
+  padding-right: 8.7rem;
+  padding-left: 8.7rem;
+  background-image: url("../images/controller.png");
 }

@@ -13,9 +13,7 @@ function App() {
       <HomeSection />
       <BlogSection />
       <br />
-      <div>
-        <CommentSection />
-      </div>
+      <CommentSection />
     </div>
   );
 }
