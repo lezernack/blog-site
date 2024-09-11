@@ -3,17 +3,18 @@ import "./css/global.css";
 import "./css/App.css";
 import Navbar from "./components/Navbar";
 import HomeSection from "./components/HomeSection";
-import Section1 from "./components/Section1";
-import Section2 from "./components/Section2";
+import BlogSection from "./components/BlogSection";
+import CommentSection from "./components/CommentSection";
 
 function App() {
   return (
     <div>
       <Navbar />
       <HomeSection />
+      <BlogSection />
+      <br />
       <div>
-        <Section1 />
-        <Section2 />
+        <CommentSection />
       </div>
     </div>
   );

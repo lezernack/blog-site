@@ -39,6 +39,20 @@
   justify-content: space-evenly;
 }
 
+.Cbtn:hover,
+.Ebtn:hover,
+.Dbtn:hover {
+  background-color: rgb(40, 38, 38);
+  color: goldenrod;
+}
+
+.Cbtn:active,
+.Ebtn:active,
+.Dbtn:active {
+  background-color: gray;
+  color: snow;
+}
+
 .Cbtn,
 .Ebtn,
 .Dbtn {
@@ -46,6 +60,7 @@
   color: black;
   font-size: 25px;
   font-weight: bold;
+  border-radius: 20px;
 }
 
 ::placeholder {

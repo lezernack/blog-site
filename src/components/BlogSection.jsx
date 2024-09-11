@@ -1,9 +1,9 @@
 import React from "react";
 import "../css/global.css";
-import "../css/Section.css";
+import "../css/blogSection.css";
 import Navbar from "./Navbar";
 
-const Section1 = () => {
+const BlogSection = () => {
   return (
     <div>
       <form>
@@ -11,14 +11,14 @@ const Section1 = () => {
           <input className="title" type="text" placeholder="Section1" />
         </div>
         <div className="section">
-          <form>
+          <div>
             <input
               className="list"
               name="section1"
               type="text"
               placeholder="Placeholder"
             />
-          </form>
+          </div>
           <div className="dscrptDiv">
             <input className="dscrpt" type="text" placeholder="Description" />
           </div>
@@ -33,4 +33,4 @@ const Section1 = () => {
   );
 };
 
-export default Section1;
+export default BlogSection;
