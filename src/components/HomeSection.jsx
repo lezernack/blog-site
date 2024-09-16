@@ -11,13 +11,14 @@ const HomeSection = () => {
       </div>
 
       <div className="About">
-        <h2> A little bit about Me</h2>
+        <h2> About Me</h2>
         <p className="about">
           I&apos;m currently a student learning Software Development. I enjoy
           reading books and playing VideoGames.
         </p>
+
+        <PictureSection />
       </div>
-      <PictureSection />
     </>
   );
 };

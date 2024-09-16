@@ -49,6 +49,7 @@
 .Dbtn:hover {
   background-color: rgb(40, 38, 38);
   color: goldenrod;
+  cursor: pointer;
 }
 
 .Cbtn:active,

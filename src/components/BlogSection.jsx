@@ -8,20 +8,11 @@ const BlogSection = () => {
     <div>
       <form>
         <div className="header">
-          <input className="title" type="text" placeholder="Section1" />
+          <input className="title" type="text" placeholder="title" />
         </div>
-        <div className="section">
-          <div>
-            <input
-              className="list"
-              name="section1"
-              type="text"
-              placeholder="Placeholder"
-            />
-          </div>
-          <div className="dscrptDiv">
-            <input className="dscrpt" type="text" placeholder="Description" />
-          </div>
+
+        <div className="dscrptDiv">
+          <input className="dscrpt" type="text" placeholder="Description" />
         </div>
         <div className="btns">
           <button className="Cbtn">Create</button>

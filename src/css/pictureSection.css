@@ -1,25 +1,17 @@
 .pictures {
   display: flex;
   margin-top: 2rem;
-  justify-content: center;
-  gap: 7rem;
+  justify-content: space-evenly;
+  border-radius: 100px;
 }
 
 .book,
 .controller {
-  border: 4px inset goldenrod;
-  border-radius: 20px;
+  border: 2px inset goldenrod;
+  padding-bottom: -5rem;
+  border-radius: 46%;
 }
 
-.book {
-  margin-bottom: 4rem;
-  padding: 8.7rem;
-  background-image: url("../images/book.png");
-}
-
-.controller {
-  margin-bottom: 4rem;
-  padding-right: 8.7rem;
-  padding-left: 8.7rem;
-  background-image: url("../images/controller.png");
+img {
+  border-radius: 45%;
 }

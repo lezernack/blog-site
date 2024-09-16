@@ -18,6 +18,7 @@
   width: 100%;
   margin-top: -2.7rem;
   opacity: 60%;
+  z-index: 2;
 }
 
 .Navbar-li {
