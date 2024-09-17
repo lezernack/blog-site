@@ -1,10 +1,12 @@
 import React from "react";
 import "../css/global.css";
 import "../css/commentSection.css";
+import Navbar from "./Navbar";
 
 const CommentSection = () => {
   return (
     <div className="cntnr">
+      <Navbar />
       <theader className="table">
         <tr>
           <th>title</th>

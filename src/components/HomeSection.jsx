@@ -2,6 +2,9 @@ import React from "react";
 import "../css/global.css";
 import "../css/homeSection.css";
 import PictureSection from "./PictureSection";
+import Navbar from "./Navbar";
+import BlogSection from "./BlogSection";
+import CommentSection from "./CommentSection";
 
 const HomeSection = () => {
   return (
@@ -19,6 +22,8 @@ const HomeSection = () => {
 
         <PictureSection />
       </div>
+      <BlogSection />
+      <CommentSection />
     </>
   );
 };
