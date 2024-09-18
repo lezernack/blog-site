@@ -1,11 +1,19 @@
 .Welcome {
-  margin-top: 2rem;
-  text-align: center;
+  margin-top: 0rem;
+  text-align: left;
   font-size: 2rem;
+  border-radius: 8rem;
+  border: 4px inset goldenrod;
+}
+
+.welcomeImg {
+  mask-image: url("../images/welcome.png");
+  mask-repeat: no-repeat;
+  mask-position: 50% 50%;
 }
 
 .About {
-  margin-top: -1rem;
+  margin-top: 2rem;
   margin-left: 3%;
   margin-right: 3%;
   padding-top: 0rem;
@@ -23,10 +31,13 @@
   font-size: 1.2rem;
   text-align: center;
   color: silver;
-
+  margin-left: 1rem;
+  margin-right: 1rem;
   border-radius: 50px;
 }
 
 h2 {
   border-radius: 50px;
+  margin-left: 15%;
+  margin-right: 15%;
 }

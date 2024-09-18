@@ -3,7 +3,7 @@
   margin-top: 0;
   margin-bottom: 2px;
   padding: 5px;
-  background-color: gold;
+  background-color: goldenrod;
   color: black;
   display: flex;
   flex-wrap: nowrap;
@@ -17,8 +17,6 @@
   position: relative;
   width: auto;
   margin-top: 0rem;
-  opacity: 60%;
-  z-index: 2;
 }
 
 .Navbar-li {
