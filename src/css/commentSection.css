@@ -21,6 +21,10 @@
   color: black;
 }
 
+.cmnts::placeholder {
+  color: black;
+}
+
 .btn {
   background-color: black;
   color: gold;

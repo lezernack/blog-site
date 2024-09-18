@@ -2,7 +2,7 @@ import React from "react";
 import "../css/global.css";
 import "../css/homeSection.css";
 import PictureSection from "./PictureSection";
-import BlogSection from "./BlogSection";
+import Footer from "./Footer";
 
 const HomeSection = () => {
   return (
@@ -20,7 +20,7 @@ const HomeSection = () => {
 
         <PictureSection />
       </div>
-      <BlogSection />
+      <Footer />
     </>
   );
 };
