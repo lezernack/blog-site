@@ -1,15 +1,15 @@
 import React from "react";
 import "../css/global.css";
 import "../css/blogSection.css";
-import Navbar from "./Navbar";
+import CommentSection from "./CommentSection";
 
 const BlogSection = () => {
   return (
     <div>
       <form>
-        <div className="header">
+        <article className="header">
           <input className="title" type="text" placeholder="title" />
-        </div>
+        </article>
 
         <div className="dscrptDiv">
           <input className="dscrpt" type="text" placeholder="Description" />
@@ -20,6 +20,7 @@ const BlogSection = () => {
           <button className="Dbtn">Delete</button>
         </div>
       </form>
+      <CommentSection />
     </div>
   );
 };

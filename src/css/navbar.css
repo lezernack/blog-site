@@ -14,9 +14,9 @@
 }
 
 .Navbar {
-  position: fixed;
-  width: 100%;
-  margin-top: -2.7rem;
+  position: relative;
+  width: auto;
+  margin-top: 0rem;
   opacity: 60%;
   z-index: 2;
 }

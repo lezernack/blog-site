@@ -17,6 +17,10 @@
   background: rgb(40, 38, 38);
 }
 
+::-webkit-scrollbar-corner {
+  background: rgb(40, 38, 38);
+}
+
 /* Sets how the site looks on smaller screens */
 
 @media screen and (max-width: 350px) {

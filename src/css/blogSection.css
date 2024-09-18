@@ -4,6 +4,7 @@
   font-size: 2.5rem;
   text-decoration: overline;
   padding-top: 20px;
+  margin-top: 0rem;
 }
 
 .title {
@@ -11,35 +12,27 @@
   border: 3px inset goldenrod;
 }
 
-.section {
-  display: flex;
-  justify-content: space-evenly;
-  gap: 3rem;
-}
-
-.list {
-  padding: 5%;
-  margin-top: 5%;
-  margin-bottom: 15%;
-  border: 4px inset goldenrod;
-  border-radius: 50px;
-  font-size: 1.5rem;
-}
-
 .dscrpt {
-  padding: 5%;
+  padding: 2%;
   margin-top: 0.5rem;
-  margin-right: 5%;
   border: 4px inset goldenrod;
   border-radius: 50px;
   font-size: 1.5rem;
+  display: inline;
+  text-align: center;
 }
 
 .dscrptDiv {
-  margin-top: 1%;
+  margin-top: 2%;
+  margin-right: auto;
+  margin-left: auto;
+  display: block;
+  text-align: center;
 }
 
 .btns {
+  padding: 0.5%;
+  margin-top: 1%;
   display: flex;
   justify-content: space-evenly;
 }
