@@ -15,8 +15,8 @@ const Navbar = () => {
           <Link className="Navbar-li" to="/">
             Home
           </Link>
-          <Link className="Navbar-li" to="/comment">
-            Section2
+          <Link className="Navbar-li" to="/pictures">
+            Pictures
           </Link>
         </ul>
       </nav>

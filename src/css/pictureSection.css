@@ -1,17 +1,13 @@
-.pictures {
+.cards {
   display: flex;
-  margin-top: 2rem;
-  justify-content: space-evenly;
-  border-radius: 100px;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem;
 }
 
-.book,
-.controller {
-  border: 2px inset goldenrod;
-  padding-bottom: -5rem;
-  border-radius: 46%;
-}
-
-img {
-  border-radius: 45%;
+.img1,
+.img2 {
+  border-radius: 0;
 }

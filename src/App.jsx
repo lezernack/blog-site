@@ -5,7 +5,7 @@ import { Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import HomeSection from "./components/HomeSection";
 import BlogSection from "./components/BlogSection";
-import CommentSection from "./components/CommentSection";
+import PictureSection from "./components/PictureSection";
 import Footer from "./components/Footer";
 
 function App() {
@@ -15,7 +15,7 @@ function App() {
       <Routes>
         <Route path="/" element={<HomeSection />} />
         <Route path="blog" element={<BlogSection />} />
-        <Route path="comment" element={<CommentSection />} />
+        <Route path="pictures" element={<PictureSection />} />
       </Routes>
       <Footer />
     </div>

@@ -41,3 +41,21 @@ h2 {
   margin-right: 15%;
   color: goldenrod;
 }
+
+.pictures {
+  display: flex;
+  margin-top: 2rem;
+  justify-content: space-evenly;
+  border-radius: 100px;
+}
+
+.book,
+.controller {
+  border: 2px inset goldenrod;
+  padding-bottom: -5rem;
+  border-radius: 46%;
+}
+
+img {
+  border-radius: 45%;
+}

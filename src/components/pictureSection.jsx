@@ -6,13 +6,13 @@ import controller from "../images/controller.png";
 
 const pictureSection = () => {
   return (
-    <div className="pictures">
-      <section className="book">
-        <img src={book} height="200px" width="200px" />
-      </section>
-      <section className="controller">
-        <img src={controller} height="200px" width="200px" />
-      </section>
+    <div className="cards">
+      <div className="card1">
+        <img src={book} className="img1" height="200px" width="200px" />
+      </div>
+      <div className="card2">
+        <img src={controller} className="img2" height="200px" width="200px" />
+      </div>
     </div>
   );
 };
