@@ -1,9 +1,8 @@
 .Welcome {
   margin-top: 0rem;
-  text-align: left;
+  text-align: center;
   font-size: 2rem;
   border-radius: 8rem;
-  border: 4px inset goldenrod;
 }
 
 .welcomeImg {
@@ -40,4 +39,5 @@ h2 {
   border-radius: 50px;
   margin-left: 15%;
   margin-right: 15%;
+  color: goldenrod;
 }

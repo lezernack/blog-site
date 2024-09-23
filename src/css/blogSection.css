@@ -12,7 +12,8 @@
   border: 3px inset goldenrod;
 }
 
-.dscrpt {
+.dscrpt,
+.img {
   padding: 2%;
   margin-top: 0.5rem;
   border: 4px inset goldenrod;
@@ -22,7 +23,8 @@
   text-align: center;
 }
 
-.dscrptDiv {
+.dscrptDiv,
+.imgDiv {
   margin-top: 2%;
   margin-right: auto;
   margin-left: auto;

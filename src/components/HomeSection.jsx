@@ -3,7 +3,6 @@ import "../css/global.css";
 import "../css/homeSection.css";
 import background from "../images/background1.jpg";
 import PictureSection from "./PictureSection";
-import Footer from "./Footer";
 
 const HomeSection = () => {
   return (
@@ -26,7 +25,6 @@ const HomeSection = () => {
 
         <PictureSection />
       </div>
-      <Footer />
     </div>
   );
 };

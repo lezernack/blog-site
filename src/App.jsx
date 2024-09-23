@@ -6,6 +6,7 @@ import Navbar from "./components/Navbar";
 import HomeSection from "./components/HomeSection";
 import BlogSection from "./components/BlogSection";
 import CommentSection from "./components/CommentSection";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <Route path="blog" element={<BlogSection />} />
         <Route path="comment" element={<CommentSection />} />
       </Routes>
+      <Footer />
     </div>
   );
 }

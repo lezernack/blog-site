@@ -14,6 +14,10 @@ const BlogSection = () => {
         <div className="dscrptDiv">
           <input className="dscrpt" type="text" placeholder="Description" />
         </div>
+
+        <div className="imgDiv">
+          <input className="img" type="image" placeholder="image" />
+        </div>
         <div className="btns">
           <button className="Cbtn">Create</button>
           <button className="Ebtn">Edit</button>
