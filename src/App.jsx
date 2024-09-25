@@ -1,20 +1,23 @@
 import React from "react";
 import "./css/global.css";
 import "./css/App.css";
+import { Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import HomeSection from "./components/HomeSection";
-import Section1 from "./components/Section1";
-import Section2 from "./components/Section2";
+import BlogSection from "./components/BlogSection";
+import PictureSection from "./components/PictureSection";
+import Footer from "./components/Footer";
 
 function App() {
   return (
     <div>
       <Navbar />
-      <HomeSection />
-      <div>
-        <Section1 />
-        <Section2 />
-      </div>
+      <Routes>
+        <Route path="/" element={<HomeSection />} />
+        <Route path="blog" element={<BlogSection />} />
+        <Route path="pictures" element={<PictureSection />} />
+      </Routes>
+      <Footer />
     </div>
   );
 }

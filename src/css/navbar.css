@@ -3,7 +3,7 @@
   margin-top: 0;
   margin-bottom: 2px;
   padding: 5px;
-  background-color: gold;
+  background-color: goldenrod;
   color: black;
   display: flex;
   flex-wrap: nowrap;
@@ -14,10 +14,9 @@
 }
 
 .Navbar {
-  position: fixed;
-  width: 100%;
-  margin-top: -2.7rem;
-  opacity: 60%;
+  position: relative;
+  width: auto;
+  margin-top: 0rem;
 }
 
 .Navbar-li {
@@ -28,13 +27,13 @@
 .Navbar-li:hover {
   color: gold;
   cursor: pointer;
-  background-color: rgb(40, 38, 38);
-  border: 4px inset goldenrod;
-  text-decoration: none;
+  background-color: black;
+  border: 4px inset gold;
 }
 
 .Navbar-li:active {
-  color: ivory;
-  background-color: gold;
+  color: snow;
+  background-color: gray;
+  border: 4px inset black;
   text-decoration: none;
 }

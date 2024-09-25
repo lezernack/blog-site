@@ -1,18 +1,28 @@
 .Welcome {
-  margin-top: 2rem;
+  margin-top: 0rem;
   text-align: center;
   font-size: 2rem;
+  border-radius: 8rem;
+}
+
+.welcomeImg {
+  mask-image: url("../images/welcome.png");
+  mask-repeat: no-repeat;
+  mask-position: 50% 50%;
 }
 
 .About {
-  margin-top: -1rem;
+  margin-top: 2rem;
   margin-left: 3%;
   margin-right: 3%;
-  padding-top: 0.7rem;
+  padding-top: 0rem;
+  padding-right: 8%;
+  padding-left: 8%;
   padding-bottom: 3rem;
+  bottom: 20rem;
   font-size: 1.5rem;
   border: 4px inset goldenrod;
-  border-radius: 50px;
+  border-radius: 200px;
   text-align: center;
 }
 
@@ -21,5 +31,32 @@
   font-size: 1.2rem;
   text-align: center;
   color: silver;
+  margin-left: 1rem;
+  margin-right: 1rem;
   border-radius: 50px;
+}
+
+h2 {
+  border-radius: 50px;
+  margin-left: 15%;
+  margin-right: 15%;
+  color: goldenrod;
+}
+
+.pictures {
+  display: flex;
+  margin-top: 2rem;
+  justify-content: space-evenly;
+  border-radius: 100px;
+}
+
+.book,
+.controller {
+  border: 2px inset goldenrod;
+  padding-bottom: -5rem;
+  border-radius: 46%;
+}
+
+img {
+  border-radius: 45%;
 }

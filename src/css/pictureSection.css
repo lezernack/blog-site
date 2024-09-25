@@ -1,20 +1,54 @@
-.pictures {
+caption {
   display: flex;
-  margin-top: 2rem;
+  flex-wrap: nowrap;
+}
+
+/* Card Section*/
+.cards {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 1rem;
+  flex-wrap: wrap;
+  padding: 1rem;
+}
+
+.card1 {
+  width: 300px;
+  height: 350px;
+  perspective: 800px;
+  border-style: none;
+}
+
+.card1-inner {
+  width: 100%;
+  height: 100%;
+  transition: transform 3s;
+  transform-style: preserve-3d;
+}
+
+.card1:hover .card1-inner {
+  transform: rotateY(180deg);
+}
+
+.card1-front,
+.card1-back {
+  position: absolute;
+  backface-visibility: hidden;
+  width: 100%;
+  height: 100%;
+  border-radius: 0;
+}
+
+.card1-front {
+  display: flex;
+  align-items: center;
   justify-content: center;
-  gap: 7rem;
 }
 
-.book,
-.controller {
-  padding: 0rem;
-  border: 4px inset goldenrod;
-}
-
-.book {
-  margin-bottom: 4rem;
-}
-
-.controller {
-  margin-bottom: 4rem;
+.card1-back {
+  transform: rotateY(180deg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }

@@ -1,0 +1,17 @@
+.footer {
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  margin-top: 5rem;
+  color: gold;
+  background-color: darkcyan;
+  text-align: center;
+  font-size: 1.25rem;
+}
+
+span {
+  text-align: center;
+  background-color: darkcyan;
+  color: gold;
+  font-weight: bold;
+}

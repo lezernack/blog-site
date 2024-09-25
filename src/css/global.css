@@ -2,3 +2,359 @@
   background-color: rgb(40, 38, 38);
   color: goldenrod;
 }
+
+/* Change scrollbar color*/
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: goldenrod;
+}
+
+::-webkit-scrollbar-track {
+  background: rgb(40, 38, 38);
+}
+
+::-webkit-scrollbar-corner {
+  background: rgb(40, 38, 38);
+}
+
+/* Sets how the site looks on smaller screens */
+
+@media screen and (max-width: 350px) {
+  ul.Navbar,
+  li.Navbar-li {
+    font-size: 15px;
+  }
+
+  ul.Navbar {
+    margin-top: 0rem;
+  }
+
+  div.Welcome {
+    font-size: 1.25rem;
+    text-align: center;
+    margin-top: 3rem;
+  }
+
+  div.About {
+    font-size: 1rem;
+    text-align: center;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin-right: 1rem;
+    margin-left: 1rem;
+  }
+  p.about {
+    font-size: 0.8rem;
+  }
+
+  div.pictures {
+    display: inline-block;
+    text-align: center;
+    margin-left: 17%;
+  }
+
+  img {
+    height: 100px;
+    width: 100px;
+  }
+
+  div.section {
+    display: inline;
+    text-align: center;
+  }
+
+  input.dscrpt,
+  input.list {
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+    margin-right: 0;
+    padding: 2%;
+    font-size: 1.25rem;
+  }
+
+  div.header,
+  input.title {
+    font-size: 1.5rem;
+  }
+
+  button.Cbtn,
+  button.Ebtn,
+  button.Dbtn {
+    font-size: 15px;
+  }
+}
+
+@media screen and (min-width: 351px) and (max-width: 400px) {
+  ul.Navbar,
+  li.Navbar-li {
+    font-size: 15px;
+  }
+
+  ul.Navbar {
+    margin-top: 0rem;
+  }
+
+  div.Welcome {
+    font-size: 1.3rem;
+    text-align: center;
+    margin-top: 3rem;
+  }
+
+  div.About {
+    font-size: 1.25rem;
+    text-align: center;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin-right: 1rem;
+    margin-left: 1rem;
+  }
+  p.about {
+    font-size: 1rem;
+  }
+
+  div.pictures {
+    display: inline-block;
+    text-align: center;
+    margin-left: 15%;
+  }
+
+  img {
+    height: 150px;
+    width: 150px;
+  }
+
+  div.section {
+    display: inline;
+    text-align: center;
+  }
+
+  input.dscrpt,
+  input.list {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    margin-right: 0;
+    padding: 2%;
+  }
+
+  input.list {
+    margin-bottom: 1.5rem;
+  }
+
+  div.header,
+  input.title {
+    font-size: 1.5rem;
+  }
+
+  button.Cbtn,
+  button.Ebtn,
+  button.Dbtn {
+    font-size: 18px;
+  }
+}
+
+@media screen and (min-width: 401px) and (max-width: 450px) {
+  ul.Navbar,
+  li.Navbar-li {
+    font-size: 15px;
+  }
+
+  ul.Navbar {
+    margin-top: 0rem;
+  }
+
+  div.Welcome {
+    font-size: 1.3rem;
+    text-align: center;
+    margin-top: 3rem;
+  }
+
+  div.About {
+    font-size: 1.25rem;
+    text-align: center;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin-right: 2rem;
+    margin-left: 2rem;
+  }
+  p.about {
+    font-size: 1rem;
+  }
+
+  div.pictures {
+    display: inline-block;
+    text-align: center;
+    margin-left: 19%;
+  }
+
+  img {
+    height: 150px;
+    width: 150px;
+  }
+
+  div.section {
+    display: inline;
+    text-align: center;
+  }
+
+  input.dscrpt,
+  input.list {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    margin-right: 0;
+    padding: 2%;
+  }
+
+  input.list {
+    margin-bottom: 1.5rem;
+  }
+
+  div.header,
+  input.title {
+    font-size: 1.5rem;
+  }
+
+  button.Cbtn,
+  button.Ebtn,
+  button.Dbtn {
+    font-size: 19px;
+  }
+}
+
+@media screen and (min-width: 600px) and (max-width: 650px) {
+  ul.Navbar,
+  li.Navbar-li {
+    font-size: 20px;
+  }
+
+  ul.Navbar {
+    margin-top: 0rem;
+  }
+
+  div.Welcome {
+    font-size: 1.3rem;
+    text-align: center;
+    margin-top: 4rem;
+  }
+
+  div.About {
+    font-size: 1.5rem;
+    text-align: center;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin-right: 3rem;
+    margin-left: 3rem;
+  }
+  p.about {
+    font-size: 1.2rem;
+  }
+
+  div.pictures {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+  }
+
+  img {
+    height: 150px;
+    width: 150px;
+  }
+
+  div.section {
+    display: inline;
+    text-align: center;
+  }
+
+  input.dscrpt,
+  input.list {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    margin-right: 0;
+    padding: 2%;
+    font-size: 1.5rem;
+  }
+
+  input.list {
+    margin-bottom: 1.5rem;
+  }
+
+  div.header,
+  input.title {
+    font-size: 1.75rem;
+  }
+
+  button.Cbtn,
+  button.Ebtn,
+  button.Dbtn {
+    font-size: 19px;
+  }
+}
+
+@media screen and (min-width: 651px) and (max-width: 770px) {
+  ul.Navbar,
+  li.Navbar-li {
+    font-size: 20px;
+  }
+
+  ul.Navbar {
+    margin-top: 0rem;
+  }
+
+  div.Welcome {
+    font-size: 1.3rem;
+    text-align: center;
+    margin-top: 3rem;
+  }
+
+  div.About {
+    font-size: 1.25rem;
+    text-align: center;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin-right: 3rem;
+    margin-left: 3rem;
+  }
+  p.about {
+    font-size: 1rem;
+  }
+
+  div.pictures {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+  }
+
+  img {
+    height: 150px;
+    width: 150px;
+  }
+
+  div.section {
+    display: flex;
+    justify-content: center;
+  }
+
+  input.dscrpt,
+  input.list {
+    margin-top: 1rem;
+    margin-right: 0;
+    padding: 2%;
+  }
+
+  input.list {
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+
+  div.header,
+  input.title {
+    text-decoration: overline;
+    font-size: 1.75rem;
+  }
+  input::placeholder {
+    text-decoration: overline;
+  }
+}

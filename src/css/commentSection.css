@@ -1,0 +1,63 @@
+.cmnt-cntnr {
+  display: flex;
+  justify-content: left;
+  background-color: darkcyan;
+  padding-bottom: 1rem;
+}
+
+.cmnt-sctn {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 3rem;
+  background-color: darkcyan;
+}
+
+.cmnts {
+  font-size: 1.5rem;
+  margin-top: 1rem;
+  padding: 3%;
+  border-radius: 20px;
+  border: 3px inset goldenrod;
+  background-color: black;
+  color: goldenrod;
+}
+
+.cmnts::placeholder {
+  color: goldenrod;
+}
+
+.btn {
+  background-color: black;
+  color: gold;
+  border-color: goldenrod;
+  border-radius: 20px;
+  font-weight: bold;
+}
+
+.btn:hover {
+  background-color: gold;
+  color: black;
+  border-color: black;
+  cursor: pointer;
+}
+
+.cntnr {
+  position: relative;
+  text-align: center;
+  background-color: darkcyan;
+  font-size: 20px;
+  bottom: 0;
+}
+
+table {
+  background-color: darkcyan;
+}
+
+tbody {
+  display: flex;
+  justify-content: left;
+  font-size: 20px;
+  border: 3px inset goldenrod;
+  background-color: black;
+  color: goldenrod;
+}

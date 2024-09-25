@@ -6,18 +6,28 @@ import controller from "../images/controller.png";
 
 const pictureSection = () => {
   return (
-    <div className="pictures">
-      <section className="book">
-        <img src={book} alt="book" height="400" width="400" />
-      </section>
-      <section className="controller">
-        <img
-          src={controller}
-          alt="videoGame controller"
-          height="400"
-          width="400"
-        />
-      </section>
+    <div>
+      <h1>Home</h1>
+      <caption>These pictures are used in the Home section</caption>
+      <div className="cards">
+        <div className="card1">
+          <div className="card1-inner">
+            <img
+              src={book}
+              className="card1-front"
+              height="200px"
+              width="200px"
+            />
+
+            <img
+              src={controller}
+              className="card1-back"
+              height="200px"
+              width="200px"
+            />
+          </div>
+        </div>
+      </div>
     </div>
   );
 };
