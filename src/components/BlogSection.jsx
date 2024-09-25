@@ -1,19 +1,53 @@
-import React from "react";
+import React, { useState } from "react";
 import "../css/global.css";
 import "../css/blogSection.css";
 import CommentSection from "./CommentSection";
 
 const BlogSection = () => {
+  let [titleInputValue, setTitleInputValue] = useState("");
+
+  let [bodyInputValue, setBodyInputValue] = useState("");
+
+  function handleTitleInputChange(e) {
+    setTitleInputValue(e.target.value);
+  }
+
+  function Create(e) {
+    e.preventDefault();
+    console.log(`${titleInputValue}`);
+  }
+
+  function Edit(e) {
+    e.preventDefault();
+    console.log("Edit is working");
+  }
+
+  function Delete(e) {
+    e.preventDefault();
+    console.log("Delete is working");
+  }
+
   return (
     <div>
       <form>
         <div className="blog">
           <article className="header">
-            <input className="title" type="text" placeholder="title" />
+            <input
+              className="title"
+              type="text"
+              placeholder="title"
+              value={titleInputValue}
+              onChange={handleTitleInputChange}
+            />
           </article>
 
           <div className="dscrptDiv">
-            <input className="dscrpt" type="text" placeholder="Description" />
+            <input
+              className="dscrpt"
+              type="text"
+              placeholder="Description"
+              value={bodyInputValue}
+            />
           </div>
         </div>
         <div className="btns">
@@ -33,20 +67,5 @@ const BlogSection = () => {
     </div>
   );
 };
-
-function Create(e) {
-  e.preventDefault();
-  console.log("Create is working");
-}
-
-function Edit(e) {
-  e.preventDefault();
-  console.log("Edit is working");
-}
-
-function Delete(e) {
-  e.preventDefault();
-  console.log("Delete is working");
-}
 
 export default BlogSection;
