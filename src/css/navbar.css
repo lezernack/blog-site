@@ -27,13 +27,13 @@
 .Navbar-li:hover {
   color: gold;
   cursor: pointer;
-  background-color: rgb(40, 38, 38);
-  border: 4px inset goldenrod;
-  text-decoration: none;
+  background-color: black;
+  border: 4px inset gold;
 }
 
 .Navbar-li:active {
-  color: ivory;
-  background-color: gold;
+  color: snow;
+  background-color: gray;
+  border: 4px inset black;
   text-decoration: none;
 }

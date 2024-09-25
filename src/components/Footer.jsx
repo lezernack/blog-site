@@ -7,9 +7,10 @@ const Footer = () => {
     <div>
       <footer className="footer">
         <hr />
-        &copy; <span> {new Date().getFullYear()}</span> | Lukas Ezernack |
+        &copy;<span> {new Date().getFullYear()} |</span> Email{" "}
+        <span> | luks.ezck@gmail.com |</span>
         <br />
-        last updated: <span>{new Date().toLocaleDateString()}</span>
+        last updated:<span> {new Date().toLocaleDateString()} </span>
       </footer>
     </div>
   );

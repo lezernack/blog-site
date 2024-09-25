@@ -1,7 +1,7 @@
 .cmnt-cntnr {
   display: flex;
-  justify-content: center;
-  background-color: goldenrod;
+  justify-content: left;
+  background-color: darkcyan;
   padding-bottom: 1rem;
 }
 
@@ -9,7 +9,7 @@
   display: flex;
   justify-content: space-evenly;
   gap: 3rem;
-  background-color: goldenrod;
+  background-color: darkcyan;
 }
 
 .cmnts {
@@ -17,13 +17,13 @@
   margin-top: 1rem;
   padding: 3%;
   border-radius: 20px;
-  border: 3px inset black;
-  background-color: goldenrod;
-  color: black;
+  border: 3px inset goldenrod;
+  background-color: black;
+  color: goldenrod;
 }
 
 .cmnts::placeholder {
-  color: black;
+  color: goldenrod;
 }
 
 .btn {
@@ -44,24 +44,20 @@
 .cntnr {
   position: relative;
   text-align: center;
-  background-color: goldenrod;
+  background-color: darkcyan;
   font-size: 20px;
   bottom: 0;
 }
 
-.table {
-  display: inline;
-  text-align: center;
-  font-size: 20px;
+table {
+  background-color: darkcyan;
 }
 
-tr {
+tbody {
   display: flex;
-  justify-content: space-evenly;
-  background-color: goldenrod;
-}
-
-th {
-  background-color: goldenrod;
-  color: black;
+  justify-content: left;
+  font-size: 20px;
+  border: 3px inset goldenrod;
+  background-color: black;
+  color: goldenrod;
 }
