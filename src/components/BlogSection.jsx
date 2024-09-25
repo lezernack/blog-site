@@ -7,26 +7,46 @@ const BlogSection = () => {
   return (
     <div>
       <form>
-        <article className="header">
-          <input className="title" type="text" placeholder="title" />
-        </article>
+        <div className="blog">
+          <article className="header">
+            <input className="title" type="text" placeholder="title" />
+          </article>
 
-        <div className="dscrptDiv">
-          <input className="dscrpt" type="text" placeholder="Description" />
-        </div>
-
-        <div className="imgDiv">
-          <input className="img" type="image" placeholder="image" />
+          <div className="dscrptDiv">
+            <input className="dscrpt" type="text" placeholder="Description" />
+          </div>
         </div>
         <div className="btns">
-          <button className="Cbtn">Create</button>
-          <button className="Ebtn">Edit</button>
-          <button className="Dbtn">Delete</button>
+          <button className="Cbtn" onClick={Create}>
+            Create
+          </button>
+          <button className="Ebtn" onClick={Edit}>
+            Edit
+          </button>
+          <button className="Dbtn" onClick={Delete}>
+            Delete
+          </button>
         </div>
       </form>
+      <br />
       <CommentSection />
     </div>
   );
 };
+
+function Create(e) {
+  e.preventDefault();
+  console.log("Create is working");
+}
+
+function Edit(e) {
+  e.preventDefault();
+  console.log("Edit is working");
+}
+
+function Delete(e) {
+  e.preventDefault();
+  console.log("Delete is working");
+}
 
 export default BlogSection;

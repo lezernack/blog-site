@@ -1,3 +1,8 @@
+.blog {
+  border: 3px inset goldenrod;
+  margin: 1rem;
+}
+
 .header,
 .title {
   text-align: center;
@@ -12,8 +17,7 @@
   border: 3px inset goldenrod;
 }
 
-.dscrpt,
-.img {
+.dscrpt {
   padding: 2%;
   margin-top: 0.5rem;
   border: 4px inset goldenrod;
@@ -23,8 +27,7 @@
   text-align: center;
 }
 
-.dscrptDiv,
-.imgDiv {
+.dscrptDiv {
   margin-top: 2%;
   margin-right: auto;
   margin-left: auto;

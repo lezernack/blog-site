@@ -2,6 +2,7 @@
   display: flex;
   justify-content: center;
   background-color: goldenrod;
+  padding-bottom: 1rem;
 }
 
 .cmnt-sctn {
@@ -41,9 +42,11 @@
 }
 
 .cntnr {
+  position: relative;
   text-align: center;
   background-color: goldenrod;
   font-size: 20px;
+  bottom: 0;
 }
 
 .table {

@@ -3,20 +3,26 @@ import "../css/global.css";
 import "../css/commentSection.css";
 
 const CommentSection = () => {
+  const onClick = (e) => {
+    e.preventDefault();
+    console.log("comment button is working");
+  };
+
   return (
     <div className="cntnr">
-      <theader className="table">
-        <tr>
-          <th>title</th>
-          <th>title</th>
-        </tr>
-      </theader>
       <div className="cmnt-cntnr">
         <form className="cmnt-sctn">
           <input className="cmnts" type="text" placeholder="Comment" />
-          <button className="btn">Submit</button>
+          <button className="btn" onClick={onClick}>
+            Submit
+          </button>
         </form>
       </div>
+      <table>
+        <tbody>
+          <thead>Hello</thead>
+        </tbody>
+      </table>
     </div>
   );
 };
