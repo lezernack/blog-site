@@ -3,6 +3,7 @@ import React from "react";
 import "../css/global.css";
 import "../css/navbar.css";
 import { Link } from "react-router-dom";
+import Auth from "../firebase/Auth";
 
 const Navbar = () => {
   return (
@@ -18,6 +19,7 @@ const Navbar = () => {
           <Link className="Navbar-li" to="/pictures">
             Pictures
           </Link>
+          <Auth />
         </ul>
       </nav>
     </div>

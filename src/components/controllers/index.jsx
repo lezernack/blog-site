@@ -1,4 +1,6 @@
 import React from "react";
+import "../css/Global";
+import "../css/BlogSection";
 
 const createBlog = async (req, res) => {
   return (
@@ -9,7 +11,7 @@ const createBlog = async (req, res) => {
         </div>
         <div className="section">
           <div className="dscrptDiv">
-            <input className="dscrpt" type="text" placeholder="Description" />
+            <input className="dscrpt" type="text" placeholder="paragraph" />
           </div>
         </div>
         <div className="btns">
