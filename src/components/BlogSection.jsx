@@ -12,9 +12,14 @@ const BlogSection = () => {
     setTitleInputValue(e.target.value);
   }
 
+  function handleBodyInputChange(e) {
+    setBodyInputValue(e.target.value);
+  }
+
   function Create(e) {
     e.preventDefault();
     console.log(`${titleInputValue}`);
+    console.log(`${bodyInputValue}`);
   }
 
   function Edit(e) {
@@ -47,6 +52,7 @@ const BlogSection = () => {
               type="text"
               placeholder="Description"
               value={bodyInputValue}
+              onChange={handleBodyInputChange}
             />
           </div>
         </div>
