@@ -10,10 +10,10 @@ import {
   Select,
   useToast,
 } from "@chakra-ui/react";
-import useAuth from "../../firebase/hooks/useAuth.js";
-import { addTodo } from "../../crud/Crud.js";
+import useAuth from "../firebase/hooks/useAuth.js";
+import addTodo from "../api/todo.js";
 
-const CreateBlog = () => {
+const AddTodo = () => {
   const [title, setTitle] = React.useState("");
   const [description, setDescription] = React.useState("");
   const [status, setStatus] = React.useState("pending");
@@ -90,4 +90,4 @@ const CreateBlog = () => {
   );
 };
 
-export default CreateBlog();
+export default AddTodo;

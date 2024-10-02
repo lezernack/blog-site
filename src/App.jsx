@@ -7,6 +7,7 @@ import HomeSection from "./components/HomeSection";
 import BlogSection from "./components/BlogSection";
 import PictureSection from "./components/PictureSection";
 import Footer from "./components/Footer";
+import Home from "./todo/script";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <Route path="/" element={<HomeSection />} />
         <Route path="blog" element={<BlogSection />} />
         <Route path="pictures" element={<PictureSection />} />
+        <Route path="todo" element={<Home />} />
       </Routes>
       <Footer />
     </div>
