@@ -10,7 +10,7 @@ const Footer = () => {
         &copy;<span> {new Date().getFullYear()} |</span> Email{" "}
         <span> | luks.ezck@gmail.com |</span>
         <br />
-        last updated:<span> {new Date().toLocaleDateString()} </span>
+        Current Date:<span> {new Date().toLocaleDateString()} </span>
       </footer>
     </div>
   );

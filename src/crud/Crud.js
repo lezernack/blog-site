@@ -5,7 +5,7 @@ import {
   doc,
   deleteDoc,
 } from "firebase/firestore";
-import { db } from "../../firebase";
+import { db } from "../firebase";
 
 const toggleTodoStatus = async ({ docId, status }) => {
   try {
@@ -14,12 +14,12 @@ const toggleTodoStatus = async ({ docId, status }) => {
       status,
     });
   } catch (error) {
-    console.log(err);
+    console.log(error);
   }
 };
 
 // CREATE
-const createBlog = async ({ userId, title, description, status }) => {
+const addTodo = async ({ userId, title, description, status }) => {
   try {
     await addDoc(collection(db, "todo"), {
       user: userId,
@@ -32,7 +32,7 @@ const createBlog = async ({ userId, title, description, status }) => {
 };
 
 // UPDATE
-const editBlog = async (docId) => {
+const editTodo = async ({ docId, title, description }) => {
   try {
     const todoRef = doc(db, "todo", docId);
     await updateDoc(todoRef, {
@@ -45,7 +45,7 @@ const editBlog = async (docId) => {
 };
 
 // DELETE
-const deleteBlog = async (docId) => {
+const deleteTodo = async (docId) => {
   try {
     const todoRef = doc(db, "todo", docId);
     await deleteDoc(todoRef);
@@ -54,4 +54,4 @@ const deleteBlog = async (docId) => {
   }
 };
 
-export default { createBlog, editBlog, deleteBlog };
+export default { addTodo, editTodo, deleteTodo, toggleTodoStatus };
