@@ -23,8 +23,7 @@ import {
 } from "firebase/firestore";
 import { db } from "../firebase/index.js";
 import { FaToggleOff, FaToggleOn, FaTrash } from "react-icons/fa";
-import deleteTodo from "../api/todo.js";
-import toggleTodoStatus from "../api/todo.js";
+import { getRidOfTodo, toggleStatus } from "../api/todo.js";
 
 const TodoList = () => {
   const [todos, setTodos] = useState([]);
@@ -52,15 +51,15 @@ const TodoList = () => {
   }, [user]);
 
   const handleTodoDelete = async (id) => {
-    if (Window.confirm("Are you sure?")) {
-      deleteTodo(id);
+    if (window.confirm("Are you sure?")) {
+      getRidOfTodo(id);
       toast({ title: "todo deleted successfully", status: "success" });
     }
   };
 
   const handleToggle = async (id, status) => {
     const newStatus = status === "completed" ? "pending" : "completed";
-    await toggleTodoStatus({ docId: id, status: newStatus });
+    await toggleStatus({ docId: id, status: newStatus });
     toast({
       title: `Todo marked ${newStatus}`,
       status: newStatus === "completed" ? "success" : "warning",

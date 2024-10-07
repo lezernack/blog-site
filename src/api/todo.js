@@ -1,3 +1,4 @@
+import React from "react";
 import {
   collection,
   addDoc,
@@ -7,7 +8,7 @@ import {
 } from "firebase/firestore";
 import { db } from "../firebase";
 
-const toggleTodoStatus = async ({ docId, status }) => {
+const toggleStatus = async ({ docId, status }) => {
   try {
     const todoRef = doc(db, "todo", docId);
     await updateDoc(todoRef, {
@@ -45,7 +46,7 @@ const editTodo = async ({ docId, title, description }) => {
 };
 
 // DELETE
-const deleteTodo = async (docId) => {
+const getRidOfTodo = async (docId) => {
   try {
     const todoRef = doc(db, "todo", docId);
     await deleteDoc(todoRef);
@@ -54,4 +55,4 @@ const deleteTodo = async (docId) => {
   }
 };
 
-export default { addTodo, editTodo, deleteTodo, toggleTodoStatus };
+export { addTodo, editTodo, getRidOfTodo, toggleStatus };

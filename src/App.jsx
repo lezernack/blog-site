@@ -7,7 +7,7 @@ import HomeSection from "./components/HomeSection";
 import BlogSection from "./components/BlogSection";
 import PictureSection from "./components/PictureSection";
 import Footer from "./components/Footer";
-import Home from "./todo/script";
+import Home from "./todo/page";
 
 function App() {
   return (

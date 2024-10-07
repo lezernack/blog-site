@@ -2,6 +2,9 @@ import React, { useState } from "react";
 import "../css/global.css";
 import "../css/blogSection.css";
 import CommentSection from "./CommentSection";
+import { Container } from "@chakra-ui/react";
+import AddTodo from "../controllers/Create";
+import TodoList from "../controllers/blogList";
 
 const BlogSection = () => {
   let [titleInputValue, setTitleInputValue] = useState("");
@@ -35,27 +38,10 @@ const BlogSection = () => {
   return (
     <div>
       <form>
-        <div className="blog">
-          <article className="header">
-            <input
-              className="title"
-              type="text"
-              placeholder="title"
-              value={titleInputValue}
-              onChange={handleTitleInputChange}
-            />
-          </article>
-
-          <div className="dscrptDiv">
-            <input
-              className="dscrpt"
-              type="text"
-              placeholder="Description"
-              value={bodyInputValue}
-              onChange={handleBodyInputChange}
-            />
-          </div>
-        </div>
+        <Container maxW="7x1">
+          {<AddTodo />}
+          {<TodoList />}
+        </Container>
         <div className="btns">
           <button className="Cbtn" onClick={Create}>
             Create

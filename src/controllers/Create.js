@@ -11,7 +11,8 @@ import {
   useToast,
 } from "@chakra-ui/react";
 import useAuth from "../firebase/hooks/useAuth.js";
-import addTodo from "../api/todo.js";
+import { addTodo } from "../api/todo.js";
+import "../css/blogSection.css";
 
 const AddTodo = () => {
   const [title, setTitle] = React.useState("");
@@ -47,47 +48,40 @@ const AddTodo = () => {
   };
 
   return (
-    <Box w="40%" margin={"0 auto"} display="block" mt={5}>
-      <Stack direction="column">
-        <Input
-          placeholder="Title"
-          value={title}
-          onChange={(e) => setTitle(e.target.value)}
-        />
+    <div>
+      <form>
+        <div className="blog">
+          <article className="header">
+            <Input
+              className="title"
+              type="text"
+              placeholder="title"
+              value={title}
+              onChange={(e) => setTitle(e.target.value)}
+            />
+          </article>
 
-        <Textarea
-          placeholder="Description"
-          value={description}
-          onChange={(e) => setDescription(e.target.value)}
-        />
-
-        <Select value={status} onChange={(e) => setStatus(e.target.value)}>
-          <option
-            value={"pending"}
-            style={{ color: "orange", fontWeight: "bold" }}
+          <div className="dscrptDiv">
+            <Textarea
+              className="dscrpt"
+              type="text"
+              placeholder="Description"
+              value={description}
+              onChange={(e) => setDescription(e.target.value)}
+            />
+          </div>
+        </div>
+        <div className="btns">
+          <Button
+            className="Cbtn"
+            onClick={() => handleCreateBlog()}
+            disabled={title.length < 1 || description.length < 1 || isLoading}
           >
-            Pending
-          </option>
-          <option
-            value={"completed"}
-            style={{ color: "green", fontWeight: "bold" }}
-          >
-            Completed
-          </option>
-        </Select>
-
-        <Button
-          onClick={() => handleCreateBlog()}
-          disabled={title.length < 1 || description.length < 1 || isLoading}
-          variant={"solid"}
-          color={"white"}
-          bg={"darkcyan"}
-        >
-          Create
-        </Button>
-      </Stack>
-    </Box>
+            Create
+          </Button>
+        </div>
+      </form>
+    </div>
   );
 };
-
 export default AddTodo;
