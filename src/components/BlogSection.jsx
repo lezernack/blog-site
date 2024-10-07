@@ -6,47 +6,30 @@ import CommentSection from "./CommentSection";
 const BlogSection = () => {
   return (
     <div>
-      <form>
-        <div className="blog">
-          <article className="header">
-            <input className="title" type="text" placeholder="title" />
-          </article>
+      <div className="blog">
+        <header className="header">
+          <h2 className="title">Which are better Cats or Dogs?</h2>
+        </header>
 
-          <div className="dscrptDiv">
-            <input className="dscrpt" type="text" placeholder="Description" />
-          </div>
+        <div className="dscrptDiv">
+          <p className="dscrpt">
+            Now really it comes down to the individual person and the living
+            space. First Cats;
+          </p>
+          <br />
+          <ul>
+            <li>Pros</li>
+          </ul>
+          <ul>
+            <li>Cons</li>
+          </ul>
         </div>
-        <div className="btns">
-          <button className="Cbtn" onClick={Create}>
-            Create
-          </button>
-          <button className="Ebtn" onClick={Edit}>
-            Edit
-          </button>
-          <button className="Dbtn" onClick={Delete}>
-            Delete
-          </button>
-        </div>
-      </form>
+      </div>
+
       <br />
       <CommentSection />
     </div>
   );
 };
-
-function Create(e) {
-  e.preventDefault();
-  console.log("Create is working");
-}
-
-function Edit(e) {
-  e.preventDefault();
-  console.log("Edit is working");
-}
-
-function Delete(e) {
-  e.preventDefault();
-  console.log("Delete is working");
-}
 
 export default BlogSection;

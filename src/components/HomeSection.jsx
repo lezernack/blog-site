@@ -21,7 +21,8 @@ const HomeSection = () => {
         <h2> About Me</h2>
         <p className="about">
           I&apos;m currently a student learning Software Development. I enjoy
-          reading books and playing VideoGames.
+          reading books and playing VideoGames. And I have a small dog that
+          hate&apos;s being left alone.
         </p>
 
         <div className="pictures">

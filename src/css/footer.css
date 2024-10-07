@@ -1,7 +1,7 @@
 .footer {
-  position: fixed;
+  position: relative;
   width: 100%;
-  bottom: 0;
+  bottom: -1.5rem;
   margin-top: 5rem;
   color: gold;
   background-color: darkcyan;
