@@ -1,20 +1,12 @@
 "use client";
 
 import React from "react";
-import {
-  Box,
-  Input,
-  Button,
-  Textarea,
-  Stack,
-  Select,
-  useToast,
-} from "@chakra-ui/react";
+import { Button, Input, Textarea, useToast } from "@chakra-ui/react";
 import useAuth from "../firebase/hooks/useAuth.js";
-import { addTodo } from "../api/todo.js";
-import "../css/blogSection.css";
+import { addComment } from "../crud/api/comment.js";
+import "../css/commentSection.css";
 
-const AddTodo = () => {
+const CreateComment = () => {
   const [title, setTitle] = React.useState("");
   const [description, setDescription] = React.useState("");
   const [status, setStatus] = React.useState("pending");
@@ -22,10 +14,10 @@ const AddTodo = () => {
   const toast = useToast();
   const { isLoggedIn, user } = useAuth();
 
-  const handleCreateBlog = async () => {
+  const handleCreateComment = async () => {
     if (!isLoggedIn) {
       toast({
-        title: "You must be logged in to create a blog",
+        title: "You must be logged in to create a comment",
         status: "error",
         duration: 9000,
         isClosable: true,
@@ -33,13 +25,13 @@ const AddTodo = () => {
       return;
     }
     setIsLoading(true);
-    const todo = {
+    const comment = {
       title,
-      description,
       status,
+      description,
       userId: user.uid,
     };
-    await addTodo(todo);
+    await addComment(comment);
     setIsLoading(false);
     setTitle("");
     setDescription("");
@@ -48,40 +40,27 @@ const AddTodo = () => {
   };
 
   return (
-    <div>
-      <form>
-        <div className="blog">
-          <article className="header">
-            <Input
-              className="title"
-              type="text"
-              placeholder="title"
-              value={title}
-              onChange={(e) => setTitle(e.target.value)}
-            />
-          </article>
+    <div className="cntnr">
+      <div className="cmnt-cntnr">
+        <form className="cmnt-sctn">
+          <Input
+            className="cmnts"
+            type="text"
+            placeholder="Comment"
+            value={title}
+            onChange={(e) => setTitle(e.target.value)}
+          />
 
-          <div className="dscrptDiv">
-            <Textarea
-              className="dscrpt"
-              type="text"
-              placeholder="Description"
-              value={description}
-              onChange={(e) => setDescription(e.target.value)}
-            />
-          </div>
-        </div>
-        <div className="btns">
           <Button
-            className="Cbtn"
-            onClick={() => handleCreateBlog()}
+            className="btn"
+            onClick={() => handleCreateComment()}
             disabled={title.length < 1 || description.length < 1 || isLoading}
           >
-            Create
+            Submit
           </Button>
-        </div>
-      </form>
+        </form>
+      </div>
     </div>
   );
 };
-export default AddTodo;
+export default CreateComment;

@@ -6,9 +6,6 @@ const Main = () => {
       <div class="h-100 w-full flex items-center justify-center bg-teal-lightest font-sans mt-20">
         <div class="bg-gray-900 rounded shadow p-6 m-4 w-full lg:w-3/4 lg:max-w-lg">
           <div class="mb-4">
-            <h1 class="text-3xl md:text-4xl text-indigo-600 font-medium mb-2">
-              To-Do List App
-            </h1>
             <div class="flex mt-4">
               <input
                 class="shadow appearance-none border rounded w-full py-2 px-3 mr-4 text-grey-darker"
@@ -28,7 +25,7 @@ const Main = () => {
                 style="display: none"
                 id="save-todo-btn"
               >
-                Edit Todo
+                Edit Comment
               </button>
             </div>
           </div>

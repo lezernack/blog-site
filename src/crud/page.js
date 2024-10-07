@@ -1,11 +1,8 @@
-import React, { useState } from "react";
-import "../css/global.css";
-import "../css/commentSection.css";
 import { Container } from "@chakra-ui/react";
 import CreateComment from "../controllers/Create";
 import CommentList from "../controllers/commentList";
 
-function CommentSection() {
+export default function Home() {
   return (
     <Container maxW="7x1">
       {<CreateComment />}
@@ -13,5 +10,3 @@ function CommentSection() {
     </Container>
   );
 }
-
-export default CommentSection;

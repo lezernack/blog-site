@@ -1,9 +1,9 @@
 .blog {
   border: 3px inset goldenrod;
-  border-radius: 30%;
+  border-radius: 10%;
   margin: 1rem;
-  margin-right: 20rem;
-  margin-left: 20rem;
+  margin-right: 5rem;
+  margin-left: 5rem;
   padding-top: 2rem;
   padding-bottom: 2rem;
   background-color: darkcyan;
@@ -11,21 +11,21 @@
 
 .header,
 .title {
-  text-align: center;
   font-size: 2.5rem;
-  text-decoration: overline;
+  font-style: italic;
   padding-top: 20px;
   margin-top: 0rem;
 }
 
 .header {
-  margin-right: 10%;
-  margin-left: 10%;
   border-radius: 10%;
   background-color: darkcyan;
+  display: inline;
+  text-align: center;
 }
 
 .title {
+  text-align: center;
   border-radius: 20px;
   border: 3px inset goldenrod;
 }
@@ -35,59 +35,51 @@
   margin-top: 0.5rem;
   border: 4px inset goldenrod;
   border-radius: 50px;
-  font-size: 1.5rem;
-  display: inline;
+  display: inline-block;
   text-align: center;
 }
 
 .dscrptDiv {
   margin-top: 0%;
-  margin-right: 20%;
-  margin-left: 20%;
-  display: block;
+  margin-right: 10%;
+  margin-left: 10%;
+  display: inline;
   text-align: center;
   background-color: darkcyan;
 }
 
-.btns {
-  position: relative;
-  padding: 0.5%;
-  margin-top: 1%;
+.catList,
+.dogList,
+.vs,
+.h3,
+.Item {
   display: flex;
-  justify-content: right;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  border-radius: 20%;
+  color: gold;
+  gap: 2rem;
 }
 
-.Cbtn:hover,
-.Ebtn:hover,
-.Dbtn:hover {
-  background-color: rgb(40, 38, 38);
-  color: goldenrod;
-  cursor: pointer;
+.catList,
+.dogList {
+  padding: 2%;
+  border: 4px inset goldenrod;
 }
 
-.Cbtn:active,
-.Ebtn:active,
-.Dbtn:active {
-  background-color: gray;
-  color: snow;
+ul {
+  list-style-position: outside;
+  list-style-type: disc;
 }
 
-.Cbtn,
-.Ebtn,
-.Dbtn {
-  background-color: gold;
-  color: black;
-  font-size: 25px;
-  font-weight: bold;
-  border-radius: 20px;
+h3,
+.h3 {
+  color: gold;
 }
 
-::placeholder {
-  color: goldenrod;
-  opacity: 1;
-}
-
-input {
-  outline: 0px solid transparent;
-  caret-color: snow;
+.dogCat {
+  background-color: darkcyan;
+  display: flex;
+  justify-content: space-evenly;
+  gap: 0rem;
 }

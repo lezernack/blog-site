@@ -6,9 +6,10 @@ import {
   doc,
   deleteDoc,
 } from "firebase/firestore";
-import { db } from "../firebase";
+import { db } from "../../firebase";
 
-const toggleStatus = async ({ docId, status }) => {
+// toggle complete
+const toggleCommentStatus = async ({ docId, status }) => {
   try {
     const todoRef = doc(db, "todo", docId);
     await updateDoc(todoRef, {
@@ -20,7 +21,7 @@ const toggleStatus = async ({ docId, status }) => {
 };
 
 // CREATE
-const addTodo = async ({ userId, title, description, status }) => {
+const addComment = async ({ userId, title, description, status }) => {
   try {
     await addDoc(collection(db, "todo"), {
       user: userId,
@@ -33,7 +34,7 @@ const addTodo = async ({ userId, title, description, status }) => {
 };
 
 // UPDATE
-const editTodo = async ({ docId, title, description }) => {
+const editComment = async ({ docId, title, description }) => {
   try {
     const todoRef = doc(db, "todo", docId);
     await updateDoc(todoRef, {
@@ -46,7 +47,7 @@ const editTodo = async ({ docId, title, description }) => {
 };
 
 // DELETE
-const getRidOfTodo = async (docId) => {
+const deleteComment = async (docId) => {
   try {
     const todoRef = doc(db, "todo", docId);
     await deleteDoc(todoRef);
@@ -55,4 +56,4 @@ const getRidOfTodo = async (docId) => {
   }
 };
 
-export { addTodo, editTodo, getRidOfTodo, toggleStatus };
+export { addComment, editComment, deleteComment, toggleCommentStatus };
